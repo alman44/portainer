@@ -37,10 +37,10 @@ services:
       - ${DIRECTORY}/pluglog:/var/www/html/log:rw
       #- ${DIRECTORY}/backup:/var/www/html/backup:rw
       #- ${DIRECTORY}/openzwave:/opt:rw
-      - tmpfs_tmp:/tmp/
-      - tmpfs_cache:/var/cache/
+      #- tmpfs_tmp:/tmp/
+      #- tmpfs_cache:/var/cache/
       #- run_vol:/var/run
-      - tmpfs_root_cache:/root/.cache
+      #- tmpfs_root_cache:/root/.cache
     environment:
       - TZ=Europe/Paris
       - ROOT_PASSWORD=changeIt
