@@ -10,7 +10,7 @@ services:
     restart: unless-stopped
     # network_mode: host
     ports:
-      - "8124:8123"
+      - "8123:8123"
     #devices:
     #  - "/dev/ttyUSB0:/dev/ttyUSB0"
     #  - "/dev/ttyACM0:/dev/ttyACM0"
