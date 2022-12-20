@@ -6,7 +6,7 @@ services:
     restart: unless-stopped
     expose:
       - "3306"
-    # ports xxx:
+    # ports xxxx:
     #  - "3316:3306"
     environment:
       - TZ=Europe/Paris
