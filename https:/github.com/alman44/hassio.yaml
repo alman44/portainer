@@ -2,14 +2,15 @@ version: '2.4'
 services:
   web:
     container_name: homeassistant
-    image: homeassistant/aarch64-hassio-supervisor:stable
+    # docker pull homeassistant/raspberrypi4-64-homeassistant
+    image: homeassistant/raspberrypi4-64-homeassistant:stable
     volumes:
       - ${DIRECTORY}/config:/config
       - /etc/localtime:/etc/localtime:ro
     restart: unless-stopped
     # network_mode: host
     ports:
-      - "8123:8123"
+      - "8124:8123"
     #devices:
     #  - "/dev/ttyUSB0:/dev/ttyUSB0"
     #  - "/dev/ttyACM0:/dev/ttyACM0"
