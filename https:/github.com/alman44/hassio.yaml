@@ -3,7 +3,8 @@ services:
   web:
     container_name: homeassistant
     # docker pull homeassistant/raspberrypi4-64-homeassistant
-    image: homeassistant/raspberrypi4-64-homeassistant:stable
+    #image: homeassistant/raspberrypi4-64-homeassistant:stable
+    image: home-assistant/supervised-installer/releases/latest
     volumes:
       - ${DIRECTORY}/config:/config
       - /etc/localtime:/etc/localtime:ro
